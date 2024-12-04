@@ -139,9 +139,10 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   bundleVersion: 0.1
   preloadedAssets:
-  - {fileID: 11400000, guid: 5414fd8b35a7dde449630aaf44cc3db0, type: 2}
-  - {fileID: 11400000, guid: f80216b09ce810d46a0b3c08e8106a43, type: 2}
   - {fileID: -4441018121300904948, guid: 23b04fadb5a32084c893863349856e90, type: 2}
+  - {fileID: -4613001632689041094, guid: 0c00a0bac2f507e4db2e0479ed27a1a9, type: 2}
+  - {fileID: 11400000, guid: f80216b09ce810d46a0b3c08e8106a43, type: 2}
+  - {fileID: 11400000, guid: 5414fd8b35a7dde449630aaf44cc3db0, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -785,8 +786,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Oculus Project
-  metroPackageVersion: 
+  metroPackageName: OculusProject
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -794,7 +795,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Oculus Project
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Oculus Project
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
