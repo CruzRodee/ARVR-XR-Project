@@ -19,13 +19,37 @@ public class Cassette : MonoBehaviour
         }
     }
 
+    //public void PlayNextSong()
+    //{
+    //    if (songs.Length == 0) return;
+    //    audioSource.clip = songs[currentSongIndex];
+    //    audioSource.Play();
+
+    //    currentSongIndex = (currentSongIndex + 1) % songs.Length;
+    //}
+
+    bool isPlaying = false; // Flag to check if audio is playing
+
     public void PlayNextSong()
     {
         if (songs.Length == 0) return;
-        audioSource.clip = songs[currentSongIndex];
-        audioSource.Play();
 
-        currentSongIndex = (currentSongIndex + 1) % songs.Length;
+        if (isPlaying)
+        {
+            // If currently playing, stop the audio
+            audioSource.Stop();
+            isPlaying = false;
+        }
+        else
+        {
+            // If not playing, play the next song
+            audioSource.clip = songs[currentSongIndex];
+            audioSource.Play();
+            isPlaying = true;
+
+            // Update the index for the next song
+            currentSongIndex = (currentSongIndex + 1) % songs.Length;
+        }
     }
 
     // Update is called once per frame
